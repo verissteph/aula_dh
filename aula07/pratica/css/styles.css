@@ -1,0 +1,155 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Lato' sans-serif;
+}
+header img{
+    width: 400px;
+}
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: rgb(202,238,255); 
+     padding:40px 0;  /*primeiro é altura vertc e o segundo é horizontal */
+}
+header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header form{
+    display: flex;
+    justify-content: center;
+}
+header form input{
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* header form input:focus{
+    outline: none;
+} */
+
+header form button{
+    padding: 10px 20px;
+    border: grey 1px solid;
+    font-size: 15px;
+    outline: none;
+}
+/* Aqui acabamos o header, vamos iniciar o Menu */
+nav ul li a {
+    text-decoration: none;
+    color:rgb(51,51,51);
+    display: inline-block;
+    padding:20px;
+    font-size: 16px;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    /* Aqui começamos modificação */
+    /* background-color: yellow;para visualizar a area preenchida */
+    /* padding-inline-start: 0px; caso eu nao tivesse zerado o padding e a margin no geral*/ 
+   
+}
+nav{
+    background-color: rgb(233, 233, 233);
+    border-bottom: solid #cccccc 1px;
+    border-top: solid #cccccc 1px;
+}
+
+nav ul li a:hover{
+    background-color:#fff;
+}
+
+/* INICIO DA AULA 13.11 - ALINHANDO O MENU E O ASIDE */
+main{
+    display: flex;
+    /* margin:20px auto !important; Usa qnd falta 10min p mostrar ao cliente e dps busca a solução */
+     padding: 20px 0; 
+     /* Lembrar que o padding nao é o mesmo que margem */
+   }
+
+aside{
+    width: 300px;
+    padding:20px;
+    /* Colocar a borda */
+    border-right: 1px solid rgb(204,204,204);
+         }
+   /* Ajustar caixas do tamanho */
+   section{
+       width: calc(100% - 300px);
+   }
+   aside div select{
+       width:100%;
+       height: 150px; 
+   }
+
+   aside div select option{
+       padding: 10px;
+       /* Espaçar as caixas e os textos das caixas */
+   }
+
+   aside > div{
+       margin: 20px 0;
+       border-bottom: 1px solid rgb(204,204,204);
+       padding-bottom: 20px;
+   }
+/* INICIAR A SECTION, ORGANIZAR IMAGENS */
+  .produto{
+      width: 33%;
+      margin: 20px 20px;
+      padding: 10px;
+  }
+
+  .produto:hover{
+     outline: 1px solid #cccc;
+  }
+
+  .produto img{
+      width: 100%;
+  }
+
+  .produto h2{
+      font-size: 18px;
+      margin:0 0 10px 0;
+  }
+  .produto p {
+      color: grey;
+      font-size: 14px;
+  }
+/* Ajustar os preços */
+  .produto .preco, 
+  .produto .parcelamento{
+      text-align: center;
+  }
+  .produto .parcelamento{
+      font-size: 12px;
+  }
+
+  /* Ajustar icones */
+
+  .produto .acoes a{
+     text-decoration: none;
+     color:#666;
+     font-size: 12px;
+     display: flex;
+     flex-direction: column;
+     /* Colocamos assim flex e column pq queremos botar para baixo  */
+    } 
+    .produto:hover .acoes a{
+        color:black;
+    }
+.produto .acoes{
+    display: flex;
+     justify-content: space-between;
+}
+    /* PROXIMA AULA - APRENDER A USAR O GRID PARA ALINHAR AS IMAGENS */
