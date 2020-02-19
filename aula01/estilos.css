@@ -1,0 +1,37 @@
+body{
+    background-color:#00ff008c;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+h1{
+    color: bisque;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2{
+    text-decoration: underline;
+}
+p{
+    text-align: justify;
+}
+
+ol{
+    list-style: decimal-leading-zero;
+}
+.destaque{
+    text-align: center;
+    font-style: italic;
+    margin: 20px 10%;
+}
+
+#lista{
+    font-size: 15px;
+}
+
+.high{
+    background-color: darkgoldenrod;
+    color: black;
+    text-transform: uppercase;
+}
