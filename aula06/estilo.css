@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    background-color: palevioletred;
+    padding: 20px;
+}
+
+main section{
+    border:solid 1px brown;
+    width: 33%;
+    height: 150px;
+    position: relative;
+}
+main> section > article {
+    width: 20px;
+    height: 20px;
+    background-color: purple;
+}
+.A{
+    background-color: coral;
+    position: relative;
+    top: 50px;
+    left:calc(50% - 10px);
+}
+.B{
+background-color: violet;
+position: static;
+ top: 30px;   /*despreza, pois position = static*/
+left: 30px;
+
+}
+
+.C{
+    background-color: crimson;
+    position: absolute;
+    bottom:10px;
+    right:10px;
+}
+footer > div {
+    background-color: aquamarine;
+    width: 30px;
+    height: 30px;
+    border: 1px solid red;
+}
+footer{
+    position: relative;
+    background-color: #ffcccc;
+}
+.um{
+    position: relative;
+    left: 10px;
+    bottom:10px;
+}
+.dois{
+    position: absolute;
+    right:0px;
+    bottom:0px;
+}
