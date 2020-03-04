@@ -19,3 +19,4 @@ Route::get('/', function () {
 
 Route::get('/filmes/{id}','FilmeController@procurarFilmeId');
 Route::get('/filmes/procurar/{nome}','FilmeController@procurarFilmeNome');
+Route::get('/produtos/procurar/{nome}','FilmeController@carregaProdutoBancoDeDados');
