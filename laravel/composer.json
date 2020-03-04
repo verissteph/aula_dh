@@ -1,0 +1,13 @@
+{
+    "name": "digital/comp",
+    "authors": [
+        {
+            "name": "verissteph",
+            "email": "stephanieverissimopp@gmail.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^2.0",
+        "nesbot/carbon": "^2.30"
+    }
+}
